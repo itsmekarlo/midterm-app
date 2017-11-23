@@ -1,0 +1,56 @@
+<html lang='en'>
+	<head>
+		<title>Radio Alarm Clock</title>
+		<meta charset='UFT-8' name='viewport' content='width=device-width, initial=scale=1.0' >
+		<link rel='stylesheet' type='text/css' href='karlo.css'>
+	</head>
+	<body>
+		<div id='main-container'>
+			<h2 id='clock'></h2>
+		</div>
+
+		<div id='alarm-container'>
+			<h3 style="padding-bottom:20px;">Set Alarm Time</h3>
+				<label>
+					<div>
+					<select id='alarmhrs' ></select>
+					</div>
+				</label>
+				<label>
+					<div>
+					<select id='alarmmins' ></select>
+					</div>
+				</label>
+				<label>
+					<div style="display:none;">
+					<select id='alarmsecs' ></select>
+					</div>
+				</label>
+				<label>
+					<div style="display:none;">
+						<select id="ampm">
+							<option value="AM">AM</option>
+							<option value="PM">PM</option>
+						</select>
+					</div>
+				</label>
+				</div>
+		</div>
+  <div id="sele"><select id="radio" style="width:180px;"><option id="def" value="stop">Select Station</option><option id="cap" value="capi">Capital</option>
+    <option id="hea" value="heart">Heart</option>
+    <option id="lin" value="lincs">Lincs FM</option>
+    <option id="rad" value="radi">Desi Radio</option>
+    <option id="ker" value="kera">Kerrang</option></select></div>
+        
+			</div>
+		</div>
+<nav id="mainmenu">
+<ul>
+ <li id="setButton" onClick="alarmSet()"><span>Set Alarm</span></li>
+ <li id="play" class="noactive" style="margin-top:10px;"><span> By Karlo</span></li>
+<li id='clearButton' onClick='alarmClear()'><span>Clear Alarm/Stop</span></li>
+</ul>
+</nav>
+		<script type='text/javascript' src='karlo.js'></script>
+	</body>
+</html>
